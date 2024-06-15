@@ -1,14 +1,15 @@
+// File: Rectangle.java
 package assignment;
 
 public class Rectangle {
     private Double length;
     private Double width;
 
-    public boolean validLength() {
+    public boolean isLengthValid() {
         return length != null && length > 0 && (width == null || length > width);
     }
 
-    public boolean validWidth() {
+    public boolean isWidthValid() {
         return width != null && width > 0 && (length == null || width < length);
     }
 

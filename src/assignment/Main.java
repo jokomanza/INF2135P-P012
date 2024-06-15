@@ -1,3 +1,4 @@
+// File: Main.java
 package assignment;
 
 import java.io.BufferedReader;
@@ -8,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
         Rectangle rectangle = new Rectangle();
 
-        while (!rectangle.validLength()) {
+        while (!rectangle.isLengthValid()) {
             try {
                 double length = getInput("Enter the length of the rectangle: ");
                 rectangle.setLength(length);
@@ -16,7 +17,7 @@ public class Main {
                 error(" - " + e.getMessage());
             }
         }
-        while (!rectangle.validWidth()) {
+        while (!rectangle.isWidthValid()) {
             try {
                 double width = getInput("Enter the width of the rectangle: ");
                 rectangle.setWidth(width);
